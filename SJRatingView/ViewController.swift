@@ -16,6 +16,8 @@ class ViewController: UIViewController, SJRatingViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        rating.backgroundColor = UIColor.whiteColor()
+        
         // Setting the delagate to self
         rating.delegate = self
         
@@ -28,8 +30,8 @@ class ViewController: UIViewController, SJRatingViewDelegate {
     }
 
     // The SJRatingViewDelegate
-    func numberOfSJStarsSelected(stars: Int) {
-        println(stars)
+    func ratingView(numberOfStars: Int) {
+        println(numberOfStars)
     }
 
 }

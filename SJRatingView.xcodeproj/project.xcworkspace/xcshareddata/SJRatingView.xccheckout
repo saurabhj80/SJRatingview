@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A055C3F8-D46E-4FF0-A446-7B4080B6EA3D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SJRatingView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E8FEBCA267BD907D6BC26E3608A539F22A7FD486</key>
+		<string>https://github.com/saurabhj80/SJRatingview.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SJRatingView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E8FEBCA267BD907D6BC26E3608A539F22A7FD486</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/saurabhj80/SJRatingview.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E8FEBCA267BD907D6BC26E3608A539F22A7FD486</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E8FEBCA267BD907D6BC26E3608A539F22A7FD486</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SJRatingView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

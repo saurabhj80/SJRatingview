@@ -10,7 +10,7 @@ import UIKit
 
 protocol SJRatingViewDelegate {
     
-    func numberOfSJStarsSelected(stars: Int)
+    func ratingView(numberOfStars: Int)
 }
 
 
@@ -132,7 +132,7 @@ class SJRatingView: UIView {
         }
         
         // Tells the delgate that the number of selected stars have changed
-        delegate?.numberOfSJStarsSelected(numberOfStar)
+        delegate?.ratingView(numberOfStar)
     }
 
 }
