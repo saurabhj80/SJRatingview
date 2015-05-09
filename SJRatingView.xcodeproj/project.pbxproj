@@ -13,6 +13,7 @@
 		1FBE3F8E1AFD5B8200A70ACE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE3F8D1AFD5B8200A70ACE /* Images.xcassets */; };
 		1FBE3F911AFD5B8200A70ACE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE3F8F1AFD5B8200A70ACE /* LaunchScreen.xib */; };
 		1FBE3F9D1AFD5B8200A70ACE /* SJRatingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE3F9C1AFD5B8200A70ACE /* SJRatingViewTests.swift */; };
+		1FBE3FA81AFD5BAC00A70ACE /* SJRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE3FA71AFD5BAC00A70ACE /* SJRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		1FBE3F961AFD5B8200A70ACE /* SJRatingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJRatingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBE3F9B1AFD5B8200A70ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FBE3F9C1AFD5B8200A70ACE /* SJRatingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJRatingViewTests.swift; sourceTree = "<group>"; };
+		1FBE3FA71AFD5BAC00A70ACE /* SJRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SJRatingView.swift; path = View/SJRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,10 @@
 		1FBE3F831AFD5B8200A70ACE /* SJRatingView */ = {
 			isa = PBXGroup;
 			children = (
-				1FBE3F861AFD5B8200A70ACE /* AppDelegate.swift */,
+				1FBE3FA61AFD5B8C00A70ACE /* SJRatingView */,
 				1FBE3F881AFD5B8200A70ACE /* ViewController.swift */,
 				1FBE3F8A1AFD5B8200A70ACE /* Main.storyboard */,
 				1FBE3F8D1AFD5B8200A70ACE /* Images.xcassets */,
-				1FBE3F8F1AFD5B8200A70ACE /* LaunchScreen.xib */,
 				1FBE3F841AFD5B8200A70ACE /* Supporting Files */,
 			);
 			path = SJRatingView;
@@ -90,6 +91,8 @@
 		1FBE3F841AFD5B8200A70ACE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FBE3F861AFD5B8200A70ACE /* AppDelegate.swift */,
+				1FBE3F8F1AFD5B8200A70ACE /* LaunchScreen.xib */,
 				1FBE3F851AFD5B8200A70ACE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +113,14 @@
 				1FBE3F9B1AFD5B8200A70ACE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FBE3FA61AFD5B8C00A70ACE /* SJRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE3FA71AFD5BAC00A70ACE /* SJRatingView.swift */,
+			);
+			name = SJRatingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBE3FA81AFD5BAC00A70ACE /* SJRatingView.swift in Sources */,
 				1FBE3F891AFD5B8200A70ACE /* ViewController.swift in Sources */,
 				1FBE3F871AFD5B8200A70ACE /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +421,7 @@
 				1FBE3FA21AFD5B8200A70ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FBE3FA31AFD5B8200A70ACE /* Build configuration list for PBXNativeTarget "SJRatingViewTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				1FBE3FA51AFD5B8200A70ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

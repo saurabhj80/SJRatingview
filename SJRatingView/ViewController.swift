@@ -8,18 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SJRatingViewDelegate {
 
+    // The Rating View
+    @IBOutlet weak var rating: SJRatingView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Setting the delagate to self
+        rating.delegate = self
+        
+        // Animation Duration
+        rating.animationDuration = 0.2
+        
+        // By default is 5
+        rating.numberOfStars = 5
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // The SJRatingViewDelegate
+    func numberOfSJStarsSelected(stars: Int) {
+        println(stars)
     }
-
 
 }
 
