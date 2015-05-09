@@ -23,15 +23,37 @@
                                     <constraint firstAttribute="height" constant="40" id="i3G-wu-guj"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkd-75-Rrp" customClass="SJRatingView" customModule="SJRatingView" customModuleProvider="target">
+                                <rect key="frame" x="200" y="328" width="200" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="11O-59-QVH"/>
+                                    <constraint firstAttribute="width" constant="200" id="dj1-og-dvD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfZ-nD-0yb" customClass="SJRatingView" customModule="SJRatingView" customModuleProvider="target">
+                                <rect key="frame" x="200" y="376" width="200" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ec6-Cj-r85"/>
+                                    <constraint firstAttribute="width" constant="200" id="you-18-ZAk"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jfZ-nD-0yb" secondAttribute="centerX" id="0M3-ew-yar"/>
                             <constraint firstAttribute="centerY" secondItem="xFv-A9-RsI" secondAttribute="centerY" id="1El-7V-xfS"/>
+                            <constraint firstAttribute="centerX" secondItem="Pkd-75-Rrp" secondAttribute="centerX" id="457-dV-PbO"/>
+                            <constraint firstItem="Pkd-75-Rrp" firstAttribute="top" secondItem="xFv-A9-RsI" secondAttribute="bottom" constant="8" id="7aH-MC-pMl"/>
                             <constraint firstAttribute="centerX" secondItem="xFv-A9-RsI" secondAttribute="centerX" id="X7i-dl-9MT"/>
+                            <constraint firstItem="jfZ-nD-0yb" firstAttribute="top" secondItem="Pkd-75-Rrp" secondAttribute="bottom" constant="8" id="lPR-8t-E22"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="newRating" destination="Pkd-75-Rrp" id="sVC-c2-Nyn"/>
                         <outlet property="rating" destination="xFv-A9-RsI" id="UE2-TE-NWp"/>
+                        <outlet property="static_rating" destination="jfZ-nD-0yb" id="XMs-VD-345"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

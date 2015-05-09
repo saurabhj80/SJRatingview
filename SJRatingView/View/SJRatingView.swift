@@ -44,6 +44,15 @@ class SJRatingView: UIView {
         unfilled_star = image
     }
     
+    // The selected star
+    var starScore: Int = 5 {
+        didSet {
+            updateUI(starScore)
+        }
+    }
+    
+    var animationEnabled = true
+    
     /***********************************
             Private - Variables
     ***********************************/
@@ -73,15 +82,10 @@ class SJRatingView: UIView {
         }
     }
     
+    // The view containing the unfilled star
     private var backgroundView: UIView!
+    // The view containing the filled star
     private var foregroundView: UIView!
-    
-    // The selected star
-    private var starScore: Int = 5 {
-        didSet {
-            updateUI(starScore)
-        }
-    }
     
     /***********************************
                 Init
@@ -106,6 +110,9 @@ class SJRatingView: UIView {
     
     private func initialSetUp() {
         
+        // Set the background color to be white
+        backgroundColor = UIColor.whiteColor()
+        
         // Add the tap recognizer
         tap_recognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
         addGestureRecognizer(tap_recognizer)
@@ -113,6 +120,10 @@ class SJRatingView: UIView {
         backgroundView = UIView(frame: bounds)
         foregroundView = UIView(frame: bounds)
         
+        autoresizesSubviews = true
+        backgroundView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+        foregroundView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+
         // Important
         foregroundView.clipsToBounds = true
         
@@ -127,9 +138,14 @@ class SJRatingView: UIView {
         var frame = foregroundView.frame
         frame.size.width = starWidth * CGFloat(numberOfStar)
         
-        UIView.animateWithDuration(animationDuration) { [unowned self] in
+        if animationEnabled {
+            UIView.animateWithDuration(animationDuration) { [unowned self] in
+                self.foregroundView.frame = frame
+            }
+        } else {
             self.foregroundView.frame = frame
         }
+
         
         // Tells the delgate that the number of selected stars have changed
         delegate?.ratingView(numberOfStar)
